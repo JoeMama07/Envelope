@@ -16,12 +16,20 @@ function Envelope() {
         onClick={handleEnvelopeClick}
       >
         <div
-          className={`p-4 absolute top-0 left-1/2 transform -translate-x-1/2 w-80 h-40 bg-white rounded-lg shadow-md transition-transform text-black z-50 ${
+          className={`p-4 absolute top-0 left-1/2 transform -translate-x-1/2 w-80 bg-white rounded-lg shadow-md transition-transform text-black text-left z-50 ${
             isOpen ? "-translate-y-24 block" : "hidden"
           }`}
         >
-          <h3 className="text-left">Dear, ...</h3>
-          <p className="text-black"></p>
+          <h3>Dear Ryanie,</h3>
+          <p className="mt-2">
+            First things first{" "}
+            <span className="text-rose-400">Happy Valentines Day</span>, I also
+            want to let you know that I'm sorry for everything yesterday. I'm
+            very very proud of you. I don't have words, but one thing 'I LOVE
+            YOU' ok toodles.
+          </p>
+          <p className="text-right mt-2 mr-4">Yours sincerly,</p>
+          <p className="text-right text-lime-500">beep beep</p>
         </div>
         <div
           className={`absolute top-1 w-0 h-0 border-l-[190px] border-l-transparent rounded-lg border-t-[150px] border-t-yellow-200 border-r-[190px] border-r-transparent origin-top ${
